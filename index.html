@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Article preview component</title>
+</head>
+<body>
+<main class="container">
+  <div class="cardImg">
+    <img src="./images/drawers.jpg" alt="drawers">
+  </div>
+  <div class="text">
+  <section class="content">
+  <h1>Shift the overall look and feel by adding these wonderful 
+  touches to furniture in your home</h1>
+
+  <p>Ever been in a room and felt like something was missing? Perhaps 
+  it felt slightly bare and uninviting. I have got some simple tips 
+  to help you make any room feel complete.</p>
+  </section>
+
+  <div class="text-down">
+    <div class="avatar">
+      <img src="./images/avatar-michelle.jpg" alt="michelle" width="40px" height="40px"/>
+  <section class="autor-content"><h2>Michelle Appleton</h2>
+<p>28 Jun 2024</p>
+  </section>
+  </div>
+<div class="share">
+  <img src="./images/icon-share.svg" alt="share icon" class="share-icon" width="20px" height="20px" /></div>
+  <div class="share-links">
+    <span>Share</span>
+    <a href="#" aria-label="facebook"><img src="./images/icon-facebook.svg" alt="facebook icon" /></a>
+    <a href="#" aria-label="twitter"><img src="./images/icon-twitter.svg" alt="twitter icon" /></a>
+    <a href="#" aria-label="pintrest"><img src="./images/icon-pinterest.svg" alt="pintrest icon" /></a>
+  </div>
+</div>
+</div>
+</main>
+
+<script>
+  const shareBtn = document.querySelector('.share-links');
+  const toggleBtn = document.querySelector('.share-icon');
+
+  toggleBtn.addEventListener('click', ()=>{
+    shareBtn.parentElement.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
